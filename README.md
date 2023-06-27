@@ -1,16 +1,26 @@
-This is the printf Readme file
+This is the simple shell Readme file
 The team consists of two members Hagar Hussein and Heba Attia
 
-This project requirements:
-1) Write a function that produces output according to a format (c, s, %, d, i)
-2) Handle the following custom conversion specifiers: (b, u, o, x, X)
-3) prints the string including non_printable characters
-4) Handle the following conversion specifier: (p, +, -, space)
-5) Handle the following length modifiers for non-custom conversion specifiers: (l, h)
-6) Handle the field width for non-custom conversion specifiers.
-7) Handle the precision for non-custom conversion specifiers.
-8) Handle the 0 flag character for non-custom conversion specifiers.
-9) Handle the - flag character for non-custom conversion specifiers.
-10) Handle the following custom conversion specifier: r (prints the reversed string)
-11) Handle the following custom conversion specifier: R ( prints the rot13'ed string) 
-12) Make sure all the options work well together.
+The project requirements:
+1. mandatory:
+
+1) Write a beautiful code that passes the Betty checks
+2) Write a UNIX command line interpreter.
+3) Handle command lines with arguments
+4) Handle the PATH (fork must not be called if the command doesn’t exist)
+5) mplement the exit built-in, that exits the shell
+6) Implement the env built-in, that prints the current environment
+
+2. advanced:
+
+1) Write your own getline function
+2) You are not allowed to use strtok
+3) handle arguments for the built-in exit
+4) Implement the setenv and unsetenv builtin commands
+5) Implement the builtin command cd
+6) Handle the commands separator ;
+7) Handle the && and || shell logical operators
+8) Implement the alias builtin command
+9) Handle variables replacement (Handle the $? variable and Handle the $$ variable)
+10) Handle comments (#)
+11) simple_shell [filename]
